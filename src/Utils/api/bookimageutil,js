@@ -1,0 +1,49 @@
+// src/Utils/api/imageUtils.js
+
+const BASE_URL = "https://www.royalcaribbean.com";
+
+/**
+ * Extracts general ship image URLs (pools, decks, etc.) from a cruise object.
+ * @param {object} cruise - The specific cruise object from the API.
+ * @returns {string[]} An array of full, unique ship image URLs.
+ */
+export const getShipImages = (cruise) => {
+  // This is the correct path for general ship images
+  const images = cruise?.masterSailing?.ship?.media?.images;
+
+  if (!images || !Array.isArray(images)) {
+    return []; // Return empty if no images are found
+  }
+
+  const imageUrls = images.map((image) => `${BASE_URL}${image.path}`);
+  
+  // Return only unique image URLs
+  return [...new Set(imageUrls)];
+};
+
+
+/**
+ * Extracts stateroom image URLs from a cruise object.
+ * (This is your original function, just renamed for clarity)
+ * @param {object} cruise - The specific cruise object from the API.
+ * @returns {string[]} An array of full, unique stateroom image URLs.
+ */
+export const getStateroomImages = (cruise) => {
+  const stateroomClasses =
+    cruise?.masterSailing?.ship?.stateroomClasses;
+
+  if (!stateroomClasses || !Array.isArray(stateroomClasses)) {
+    return []; // Return empty if no staterooms are found
+  }
+
+  // Use flatMap to get all images from all stateroom classes into a single array
+  const imageUrls = stateroomClasses.flatMap(
+    (stateroom) =>
+      stateroom?.content?.media?.images?.map(
+        (image) => `${BASE_URL}${image.path}`
+      ) ?? []
+  );
+
+  // Return only unique image URLs
+  return [...new Set(imageUrls)];
+};

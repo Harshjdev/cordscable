@@ -1,0 +1,56 @@
+.privacy-page {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.privacy-page h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+    color: #222;
+}
+
+.privacyhead {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.privacy-content {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    line-height: 1.7;
+    padding: 0px 20px;
+}
+
+.privacy-content h3.final {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #111;
+    font-weight: 600;
+
+}
+
+.privacy-content p.final {
+    font-size: 1rem;
+}
+
+.privacy-content ul.final {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    list-style: disc;
+}
+
+.privacy-content ul.final li {
+    margin-bottom: 0.5rem;
+    font-size: 0.98rem;
+}
+
+.privacy-content a {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+.privacy-content a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}

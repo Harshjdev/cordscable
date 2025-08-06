@@ -1,0 +1,10 @@
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    justify-content: space-between;
+}
+
+.no-products{
+    margin: 0 40%;
+}

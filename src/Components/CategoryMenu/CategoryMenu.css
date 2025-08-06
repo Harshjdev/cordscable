@@ -1,0 +1,390 @@
+.categorie-box {
+    width: 40%;
+    background: #efefef;
+    border: 1px solid #e0e0e0;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.categorie-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.category-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    position: relative;
+}
+
+.category-item:last-child {
+    border-bottom: none;
+}
+
+.category-item:hover {
+    background-color: #f8f9fa;
+}
+
+.category-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+    flex-shrink: 0;
+}
+
+.category-item>p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    flex-grow: 1;
+}
+
+.categorie-wrapper {
+    position: relative;
+}
+
+.sub-categories {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #fff;
+    z-index: 1000;
+    padding: 15px;
+    border: 1px solid #ddd;
+    display: none;
+    min-width: 180px;
+    white-space: nowrap;
+}
+
+.category-item:hover>.sub-categories {
+    display: block;
+}
+
+.sub-categories-menu h5 {
+    margin: 0;
+    padding: 0;
+}
+
+.sub-categories-menu h5 a {
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+.sub-categories-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.sub-categories-menu li {
+    position: relative;
+}
+
+.sub-categories-menu li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    display: block;
+    padding: 5px 0;
+}
+
+.sub-categories-menu li a:hover {
+    color: #0056b3;
+}
+
+/* ---- Nested Submenu Styling ---- */
+.nested-submenu {
+    border: 1px solid #c7c7c7;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #fff;
+    display: none;
+    width: 180px;
+    white-space: nowrap;
+    z-index: 1000;
+}
+
+/* ✅ Prevent auto-closing: trigger + submenu both allow hover */
+.sub-categories-menu li:hover>.nested-submenu,
+.nested-submenu:hover {
+    display: block;
+}
+
+.nested-submenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.submenu-item-wrapper {
+    position: relative;
+}
+
+.submenu-item-wrapper:hover>.nested-submenu,
+.nested-submenu:hover {
+    display: block;
+}
+
+
+.nested-submenu li a {
+    position: relative;
+    display: flex;
+    padding: 5px 10px;
+}
+
+
+.sub-categories-menu ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sub-categories-menu li {
+    position: relative;
+    padding: 5px 0px;
+    margin: 0px;
+}
+
+.sub-categories-menu a {
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.sub-categories-menu a:hover {
+    color: #0056b3;
+}
+
+.sub-categories-menu .nested-submenu {
+    position: absolute;
+    padding-left: 20px;
+    font-size: 0.9em;
+}
+
+.sub-categories-menu .nested-submenu li {
+    position: relative;
+    padding: 5px 0;
+}
+
+.sub-categories-menu .nested-submenu a {
+    color: #666;
+}
+
+.viewicon {
+    padding: 0px 10px;
+    font-size: 26px;
+    color: #3065c3;
+}
+
+.view-all-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+
+.view-all-item button {
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+}
+
+.maindiv {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.categorie-box {
+    position: relative;
+    border-radius: 10px;
+    flex-shrink: 0;
+    width: 280px;
+}
+
+.categorie-side {
+    width: calc(100% - 290px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.categorie-side .slidersec {
+    width: 49%;
+}
+
+.slidersec img {
+    height: 500px !important;
+}
+
+.categorie-side .image-grid {
+    width: 49%;
+}
+
+.main-content-right {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    min-width: 0;
+}
+
+.slider-container {
+    width: 100%;
+}
+
+
+.image-grid {
+    width: 34%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid-item a:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.promo-cards-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.promo-card {
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center right;
+    color: white;
+    display: flex;
+}
+
+.promo-card-content {
+    background-color: #3a62d7;
+    width: 45%;
+    padding: 20px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.promo-card-tag {
+    background-color: white;
+    color: #3a62d7;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px 12px;
+    border-radius: 50px;
+
+    margin-bottom: 15px;
+    align-self: flex-start;
+}
+
+.promo-card-title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0 0 20px 0;
+}
+
+.promo-card-button {
+    color: white;
+    border: 1px solid white;
+    padding: 8px 20px;
+    border-radius: 50px;
+
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s, color 0.2s;
+    align-self: flex-start;
+}
+
+.promo-card-button:hover {
+    background-color: white;
+    color: #3a62d7;
+}
+
+.parentdiv {
+    padding: 30px;
+}
+
+.view-all-item {
+    text-align: center;
+}
+
+
+@media screen and (max-width:768px) {
+    .parentdiv {
+        padding: 10px;
+    }
+
+    .maindiv {
+        display: block;
+    }
+
+    .slidersec {
+        margin: 10px 0px;
+        width: 100%;
+    }
+
+    .image-grid {
+        width: 100%;
+    }
+
+    .promo-cards-container {
+        display: block;
+    }
+
+    .promo-card {
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+
+    .categorie-box {
+        width: 100%;
+        display: none;
+    }
+
+    .categorie-side {
+        width: 100%;
+    }
+
+    .categorie-side .slidersec {
+        width: 100%;
+    }
+
+    .slidersec img {
+        height: 300px !important;
+    }
+
+    .categorie-side .image-grid {
+        width: 100%;
+    }
+}

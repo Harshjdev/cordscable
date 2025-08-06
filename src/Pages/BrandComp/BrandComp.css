@@ -1,0 +1,33 @@
+.brandpage {
+    background-color: white;
+}
+
+.brand-content ul {
+    padding-left: 1.2rem;
+    margin-bottom: 1.5rem;
+    list-style-type: disc;
+}
+
+.brand-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.view-more-btn {
+    display: flex;
+    justify-content: end;
+    margin-right:65px;
+}
+
+.view-more-btn button {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background: #3065CB;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}

@@ -1,0 +1,95 @@
+.dashboard-container {
+    display: flex;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Sidebar */
+.usersidebar {
+    width: 250px;
+    background-color: #1e1e2d;
+    color: white;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.profile-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.dashicon {
+    color: #E68300;
+}
+
+
+.profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-size: 14px;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav-links button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 15px;
+    text-align: left;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.nav-links button:hover {
+    background-color: #33334d;
+    border-radius: 5px;
+}
+
+/* Main Dashboard Content */
+.dashboard-content {
+    flex-grow: 1;
+    padding: 30px;
+}
+
+.dashboard-content h2 {
+    margin-bottom: 10px;
+}
+
+.dashboard-content p {
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.order-stats {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    flex: 1 1 180px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.stat-box h3 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.stat-box p {
+    font-size: 16px;
+    color: #333;
+}

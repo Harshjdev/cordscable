@@ -1,0 +1,202 @@
+.about-wrapper {
+    font-family: "Arial", sans-serif;
+}
+
+.about-banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.about-container {
+    width: 90%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.about-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    line-height: 1.8;
+    font-size: 16px;
+    color: #444;
+}
+
+.about-counter {
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.counter-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.counter-card {
+    text-align: center;
+}
+
+.counter-number {
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffc107;
+}
+
+.about-quality,
+.about-profile {
+    background-color: #f9f9f9;
+}
+
+.quality-section h2,
+.total-quality h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.quality-section p,
+.total-quality p {
+    font-size: 16px;
+}
+
+.about-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.about-col-30,
+.about-col-40,
+.about-col-60,
+.about-col-70 {
+    flex: 1 1 auto;
+}
+
+.about-col-30 {
+    flex-basis: 30%;
+}
+
+.about-col-40 {
+    flex-basis: 40%;
+}
+
+.about-col-40 img {
+    border-radius: 10px;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.about-col-60 {
+    padding-left: 40px;
+    flex-basis: 60%;
+}
+
+.about-col-70 {
+    padding-left: 40px;
+    flex-basis: 70%;
+}
+
+.about-section-text {
+    margin-top: 40px;
+}
+
+.about-section-text ul {
+    line-height: 20px;
+    padding-left: 20px;
+}
+
+.about-section-text ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.about-section-text ul {
+    line-height: 40px;
+    padding-left: 20px;
+}
+
+.aboutlist {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.aboutlist li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+}
+
+.chairmanimg {
+    width: 50%;
+}
+
+.about-inner-text {
+    margin-top: 30px;
+}
+
+.counter-section {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.counter-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    /* dark overlay */
+    z-index: 1;
+}
+
+.counter-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 60px 40px;
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+}
+
+.counter-card h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.counter-card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.chopankidiv {
+    display: flex;
+    padding: 20px 0px;
+}
+
+.about-section-text p {
+    font-size: 16px;
+}
+
+.about-inner-text p {
+    font-size: 16px;
+}

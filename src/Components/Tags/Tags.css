@@ -1,0 +1,54 @@
+/* Tags.css */
+.tags-container {
+    width: 96%;
+    padding-left: 20px;
+}
+
+.tags-container h2 {
+    padding-left: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.tags-box {
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tag {
+    font-size: 14px;
+    background-color: #e6f0ff;
+    color: #1a4ec2;
+    padding: 6px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.highlight-tag {
+    background: #3065CB;
+    color: #fff;
+    font-weight: 700;
+    border: 2px solid #1976d2;
+    box-shadow: 0 0 8px rgba(33, 150, 243, 0.3);
+}
+
+.tag:hover {
+    background-color: #d0e2ff;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width:768px) {
+    .tags-box {
+        width: 82%;
+    }
+}

@@ -1,0 +1,43 @@
+/* components/CardSlider/CardSlider.css */
+.card-slider {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.slick-slide>div {
+    padding: 0 10px;
+}
+
+.arrow {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 2;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 24px;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+.arrow:hover {
+    background-color: #f0f0f0;
+}
+
+
+.prev {
+    color: black;
+    left: -3%;
+}
+
+.next {
+    color: black;
+    right: -3%;
+}

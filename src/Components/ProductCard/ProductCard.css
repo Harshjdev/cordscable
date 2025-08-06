@@ -1,0 +1,135 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    /* tight spacing */
+    padding: 16px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-family: sans-serif;
+    background: #fff;
+}
+
+.carticon {
+    font-size: 25px;
+}
+
+.buyicon {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    padding: 0px 2px;
+}
+
+.buybtns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.get-quote {
+    background-color: #3065CB;
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0.5rem;
+}
+
+.get-quote span {
+    padding: 0px 10px;
+}
+
+.get-quote:hover {
+    background-color: #3065CB;
+}
+
+
+
+
+.image-wrapper {
+    width: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.price {
+    font-weight: bold;
+    color: green;
+    font-size: 16px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #CE0000;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.buynow {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 8px 20px;
+    background-color: #3065CB;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+    width: 48%;
+}
+
+.add-to-cart {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 5px 4px;
+    background-color: #ffffff;
+    color: #3065CB;
+    border: 2px solid #3065CB;
+    border-radius: 6px;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+    width: 48%;
+}
+
+.add-to-cart:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+
+/* Responsive */
+@media screen and (max-width:768px) {
+    .card {
+        width: 90%;
+    }
+
+    .image-wrapper {
+        width: 150px;
+        margin: 0px 80px;
+    }
+}

@@ -1,0 +1,43 @@
+.returnpolicy-page {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.returnhead {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.returnpolicy-content {
+    background-color: #fff;
+    padding: 0px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    line-height: 1.7;
+}
+
+
+
+.returnpolicy-content p.final {
+    font-size: 1rem;
+}
+
+.returnpolicy-content ul.final {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    list-style: disc;
+}
+
+.returnpolicy-content ul.final li {
+    margin-bottom: 0.5rem;
+    font-size: 0.98rem;
+}
+
+.returnpolicy-content a {
+    color: #007BFF;
+    text-decoration: underline;
+}
+
+.returnpolicy-content a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
